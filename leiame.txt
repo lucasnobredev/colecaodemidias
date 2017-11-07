@@ -40,7 +40,7 @@ O que eu fiz:
 
 A partir disso, consegui desenvolver toda a aplicação me conectando ao ES pelo localhost:9200 e o Kibana pelo localhost:5601.
 Porém, no curso que fiz no PluralSight sobre Docker (Docker Deep Dive), ele citou o dockerfile. 
-Então criei o meu próprio, com um pouquinho de ajuda da internet, para a configuração do ambiente. Ele está raiz.
+Então criei o meu próprio, com um pouquinho de ajuda da internet, para a configuração do ambiente. Ele está na raiz.
 
 Para usá-lo, eu fiz:
 	docker build -t {nomeParaAImagem}
