@@ -1,0 +1,148 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h3>Minhas mídias</h3>
+        <hr />
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Filtro para busca
+            </div>
+            <div class="panel-body">
+                <form method="post" onsubmit="return false;">
+                    <div class="panel-body">
+                        <div class="form-group col-md-3">
+                            <label>Tipo</label>
+                            <select name="TipoMidia" class="form-control">
+                                <option value="..."></option>
+                                <option value="1">Livro</option>
+                                <option value="2">Cd</option>
+                                <option value="3">Dvd</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Status</label>
+                            <select name="StatusMidia" class="form-control">
+                                <option value="">...</option>
+                                <option value="1">Disponivel</option>
+                                <option value="2">Emprestado</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>Palavra-chave</label>
+                            <input type="text" class="form-control" name="PalavraChave" />
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label>&nbsp;</label>
+                            <button class="btn btn-info form-control">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="busca-midias"></div>
+
+    </div>
+</div>
+
+@section Scripts
+    {
+    <script>
+        $(document).ready(function () {
+            $('form').submit();
+        });
+
+        $('form').submit(function () {
+            $('#busca-midias').html();
+
+            $.post('/api/midia/search', $('form').serialize())
+                .done(function (data) {
+                    $('#busca-midias').html(data);
+                })
+                .fail(function (data) {
+                    console.log(data);
+
+                });
+        });
+
+    </script>
+
+    <script>
+        function Emprestar(numeroNaColecao) {
+            $('#form-emprestar-' + numeroNaColecao).submit(function () {
+                $.post('/api/midia/emprestar', $('#form-emprestar-' + numeroNaColecao).serialize())
+                    .done(function (data) {
+                        if (data.erros == null) {
+                            alert("Midia emprestada!");
+                            location.reload();
+                        }
+                        else
+                            alert(data.erros);
+                    })
+                    .fail(function (data) {
+                        console.log(data);
+                    });
+            });
+        }
+
+        function Devolver(numeroNaColecao, tipoMidia, midiaId) {
+
+            $.post('/api/midia/devolver', { tipoMidia: tipoMidia, midiaId: midiaId })
+                .done(function (data) {
+                    if (data.erros == null) {
+                        alert("Midia devolvida!");
+                        location.reload();
+                    }
+                    else
+                        alert(data.erros);
+                })
+                .fail(function (data) {
+                    console.log(data);
+                });
+
+        }
+
+        function sortTable(n, tableId) {
+            var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+            table = document.getElementById(tableId);
+            switching = true;
+            dir = "asc";
+            while (switching) {
+                switching = false;
+                rows = table.getElementsByTagName("TR");
+                
+                for (i = 1; i < (rows.length - 1); i++) {
+                    shouldSwitch = false;
+                    x = rows[i].getElementsByTagName("TD")[n];
+                    y = rows[i + 1].getElementsByTagName("TD")[n];
+                    if (dir == "asc") {
+                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    } else if (dir == "desc") {
+                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                }
+                if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                    switchcount++;
+                } else {
+                    if (switchcount == 0 && dir == "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+            }
+        }
+
+    </script>
+}

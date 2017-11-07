@@ -1,0 +1,257 @@
+﻿@model ColecaoDeMidias.Models.Home.TodasMidiasViewModel
+@{
+    var i = 0;
+}
+
+<style>
+    th {
+        cursor: pointer
+    }
+</style>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Mídias</div>
+    <div class="panel-body">
+        @if (Model.Livros.Count() > 0)
+            {
+            <h4>Livros</h4>
+            <table class="table table-bordered" id="table-livros">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0, 'table-livros')">Descrição</th>
+                        <th onclick="sortTable(1, 'table-livros')">Título</th>
+                        <th onclick="sortTable(2, 'table-livros')">Autor</th>
+                        <th onclick="sortTable(3, 'table-livros')">Qte de páginas</th>
+                        <th onclick="sortTable(4, 'table-livros')">Emprestado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var livro in Model.Livros)
+                    {
+                        <tr>
+                            <td>@livro.Descricao</td>
+                            <td>@livro.Titulo</td>
+                            <td>@livro.NomeDoAutor</td>
+                            <td>@livro.QuantidadeDePaginas</td>
+                            @if (livro.Emprestimo.EstaEmprestado)
+                            {
+                                <td>@livro.Emprestimo.PossuinteNome = @livro.Emprestimo.PossuinteFormaDeContato | <button class="btn btn-warning" type="button" onclick="Devolver(@i, 1, @livro.Id)">Devolver</button></td>
+                            }
+                            else
+                            {
+                                <td>
+
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal_@i">
+                                        Emprestar
+                                    </button>
+                                </td>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal_@i" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">@livro.Titulo - @livro.NomeDoAutor</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form id="form-emprestar-@i" method="post" onsubmit="return false;">
+                                                    <input form="form-emprestar-@i" type="hidden" name="TipoMidia" value="1" />
+                                                    <input form="form-emprestar-@i" type="hidden" name="MidiaId" value="@livro.Id" />
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label>Nome de quem você vai emprestar</label>
+                                                                <input form="form-emprestar-@i" type="text" class="form-control" name="PossuinteNome" required/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label>Contato</label>
+                                                                <input form="form-emprestar-@i" type="text" class="form-control" name="PossuinteFormaDeContato" required/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Voltar</button>
+                                                <button form="form-emprestar-@i" type="submit" onclick="Emprestar(@i)" class="btn btn-success">Emprestar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </tr>
+                        i++;
+                    }
+                </tbody>
+            </table>
+        }
+
+        @if (Model.Cds.Count() > 0)
+            {
+            <h4>Cds</h4>
+            <table class="table table-bordered" id="table-cds">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0, 'table-cds')">Descrição</th>
+                        <th onclick="sortTable(1, 'table-cds')">Intérprete</th>
+                        <th onclick="sortTable(2, 'table-cds')">Álbum</th>
+                        <th onclick="sortTable(3, 'table-cds')">Qte de músicas</th>
+                        <th onclick="sortTable(4, 'table-cds')">Emprestado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var cd in Model.Cds)
+                {
+                        <tr>
+                            <td>@cd.Descricao</td>
+                            <td>@cd.NomeDoInterprete</td>
+                            <td>@cd.Titulo</td>
+                            <td>@cd.QuantidadeDeMusicas</td>
+                            @if (cd.Emprestimo.EstaEmprestado)
+                            {
+                                <td>@cd.Emprestimo.PossuinteNome = @cd.Emprestimo.PossuinteFormaDeContato | <button class="btn btn-warning" type="button" onclick="Devolver(@i, 2, @cd.Id)">Devolver</button></td>
+                            }
+                            else
+                            {
+                                <td>
+
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal_@i">
+                                        Emprestar
+                                    </button>
+                                </td>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal_@i" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">@cd.NomeDoInterprete - @cd.Titulo</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form id="form-emprestar-@i" method="post" onsubmit="return false;">
+                                                    <input form="form-emprestar-@i" type="hidden" name="TipoMidia" value="2" />
+                                                    <input form="form-emprestar-@i" type="hidden" name="MidiaId" value="@cd.Id" />
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label>Nome de quem você vai emprestar</label>
+                                                                <input form="form-emprestar-@i" type="text" class="form-control" name="PossuinteNome" required/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label>Contato</label>
+                                                                <input form="form-emprestar-@i" type="text" class="form-control" name="PossuinteFormaDeContato" required/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Voltar</button>
+                                                <button form="form-emprestar-@i" type="submit" onclick="Emprestar(@i)" class="btn btn-success">Emprestar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </tr>
+                        i++;
+                    }
+                </tbody>
+            </table>
+        }
+
+        @if (Model.Dvds.Count() > 0)
+            {
+            <h4>Dvds</h4>
+
+
+            <table class="table table-bordered" id="table-dvds">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0, 'table-dvds')">Descrição</th>
+                        <th onclick="sortTable(1, 'table-dvds')">Titulo</th>
+                        <th onclick="sortTable(2, 'table-dvds')">Gravadora</th>
+                        <th onclick="sortTable(3, 'table-dvds')">Idioma</th>
+                        <th onclick="sortTable(4, 'table-dvds')">Emprestado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var dvd in Model.Dvds)
+                {
+                        <tr>
+                            <td>@dvd.Descricao</td>
+                            <td>@dvd.Titulo</td>
+                            <td>@dvd.NomeDaGravadora</td>
+                            <td>@dvd.Idioma</td>
+                            @if (dvd.Emprestimo.EstaEmprestado)
+                            {
+                                <td>@dvd.Emprestimo.PossuinteNome = @dvd.Emprestimo.PossuinteFormaDeContato | <button class="btn btn-warning" type="button" onclick="Devolver(@i, 3, @dvd.Id)">Devolver</button></td>
+                            }
+                            else
+                            {
+                                <td>
+
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal_@i">
+                                        Emprestar
+                                    </button>
+                                </td>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal_@i" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">@dvd.Titulo - @dvd.NomeDaGravadora</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form id="form-emprestar-@i" method="post" onsubmit="return false;">
+                                                    <input form="form-emprestar-@i" type="hidden" name="TipoMidia" value="1" />
+                                                    <input form="form-emprestar-@i" type="hidden" name="MidiaId" value="@dvd.Id" />
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label>Nome de quem você vai emprestar</label>
+                                                                <input form="form-emprestar-@i" type="text" class="form-control" name="PossuinteNome" required/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label>Contato</label>
+                                                                <input form="form-emprestar-@i" type="text" class="form-control" name="PossuinteFormaDeContato" required />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Voltar</button>
+                                                <button form="form-emprestar-@i" type="submit" onclick="Emprestar(@i)" class="btn btn-success">Emprestar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </tr>
+                        i++;
+                    }
+                </tbody>
+            </table>
+        }
+
+    </div>
+</div>
+
+

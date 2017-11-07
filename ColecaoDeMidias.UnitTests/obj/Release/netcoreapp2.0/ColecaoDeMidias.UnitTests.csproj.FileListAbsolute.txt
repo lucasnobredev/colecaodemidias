@@ -1,0 +1,14 @@
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.UnitTests\bin\Release\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.UnitTests\bin\Release\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.UnitTests\bin\Release\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.UnitTests\bin\Release\netcoreapp2.0\ColecaoDeMidias.UnitTests.deps.json
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.UnitTests\bin\Release\netcoreapp2.0\ColecaoDeMidias.UnitTests.runtimeconfig.json
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.UnitTests\bin\Release\netcoreapp2.0\ColecaoDeMidias.UnitTests.runtimeconfig.dev.json
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.UnitTests\bin\Release\netcoreapp2.0\ColecaoDeMidias.UnitTests.dll
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.UnitTests\bin\Release\netcoreapp2.0\ColecaoDeMidias.UnitTests.pdb
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.UnitTests\obj\Release\netcoreapp2.0\ColecaoDeMidias.UnitTests.csprojResolveAssemblyReference.cache
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.UnitTests\obj\Release\netcoreapp2.0\ColecaoDeMidias.UnitTests.csproj.CoreCompileInputs.cache
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.UnitTests\obj\Release\netcoreapp2.0\ColecaoDeMidias.UnitTests.AssemblyInfoInputs.cache
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.UnitTests\obj\Release\netcoreapp2.0\ColecaoDeMidias.UnitTests.AssemblyInfo.cs
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.UnitTests\obj\Release\netcoreapp2.0\ColecaoDeMidias.UnitTests.dll
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.UnitTests\obj\Release\netcoreapp2.0\ColecaoDeMidias.UnitTests.pdb

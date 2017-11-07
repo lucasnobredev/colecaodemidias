@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColecaoDeMidias", "ColecaoDeMidias\ColecaoDeMidias.csproj", "{FAE4A09D-021E-43CB-AE27-9D5F6FDC63FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColecaoDeMidias.Domain", "ColecaoDeMidias.Domain\ColecaoDeMidias.Domain.csproj", "{4352C623-3CE6-4F2B-97F3-61AF4836F9A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColecaoDeMidias.UnitTests", "ColecaoDeMidias.UnitTests\ColecaoDeMidias.UnitTests.csproj", "{2B46C663-CB35-49CE-A166-40098860C406}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5478247C-C4EB-4727-8B80-5587A8893220}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColecaoDeMidias.Services", "ColecaoDeMidias.Services\ColecaoDeMidias.Services.csproj", "{6F6DD197-2DF1-45E9-8BED-EA41F67EE07E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColecaoDeMidias.Data", "ColecaoDeMidias.Data\ColecaoDeMidias.Data.csproj", "{263B7416-D1A4-40C6-A931-CAB645FE2D4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Leia-me", "Leia-me", "{123547EB-9E03-47C2-8FF4-2913CA8D1072}"
+	ProjectSection(SolutionItems) = preProject
+		leiame.txt = leiame.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAE4A09D-021E-43CB-AE27-9D5F6FDC63FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAE4A09D-021E-43CB-AE27-9D5F6FDC63FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAE4A09D-021E-43CB-AE27-9D5F6FDC63FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAE4A09D-021E-43CB-AE27-9D5F6FDC63FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4352C623-3CE6-4F2B-97F3-61AF4836F9A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4352C623-3CE6-4F2B-97F3-61AF4836F9A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4352C623-3CE6-4F2B-97F3-61AF4836F9A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4352C623-3CE6-4F2B-97F3-61AF4836F9A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B46C663-CB35-49CE-A166-40098860C406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B46C663-CB35-49CE-A166-40098860C406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B46C663-CB35-49CE-A166-40098860C406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B46C663-CB35-49CE-A166-40098860C406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5478247C-C4EB-4727-8B80-5587A8893220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5478247C-C4EB-4727-8B80-5587A8893220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5478247C-C4EB-4727-8B80-5587A8893220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5478247C-C4EB-4727-8B80-5587A8893220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F6DD197-2DF1-45E9-8BED-EA41F67EE07E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F6DD197-2DF1-45E9-8BED-EA41F67EE07E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F6DD197-2DF1-45E9-8BED-EA41F67EE07E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6DD197-2DF1-45E9-8BED-EA41F67EE07E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{263B7416-D1A4-40C6-A931-CAB645FE2D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{263B7416-D1A4-40C6-A931-CAB645FE2D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{263B7416-D1A4-40C6-A931-CAB645FE2D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{263B7416-D1A4-40C6-A931-CAB645FE2D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BE459B1-37C7-4303-9EA2-A453F9E098F7}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://lucasnobre.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ColecaoDeMidias.Data\\ColecaoDeMidias.Data.csproj
+		SccProjectName1 = ColecaoDeMidias.Data
+		SccLocalPath1 = ColecaoDeMidias.Data
+		SccProjectUniqueName2 = ColecaoDeMidias.Domain\\ColecaoDeMidias.Domain.csproj
+		SccProjectName2 = ColecaoDeMidias.Domain
+		SccLocalPath2 = ColecaoDeMidias.Domain
+		SccProjectUniqueName3 = ColecaoDeMidias.Services\\ColecaoDeMidias.Services.csproj
+		SccProjectName3 = ColecaoDeMidias.Services
+		SccLocalPath3 = ColecaoDeMidias.Services
+		SccProjectUniqueName4 = ColecaoDeMidias.UnitTests\\ColecaoDeMidias.UnitTests.csproj
+		SccProjectName4 = ColecaoDeMidias.UnitTests
+		SccLocalPath4 = ColecaoDeMidias.UnitTests
+		SccProjectUniqueName5 = ColecaoDeMidias\\ColecaoDeMidias.csproj
+		SccProjectName5 = ColecaoDeMidias
+		SccLocalPath5 = ColecaoDeMidias
+	EndGlobalSection
+EndGlobal

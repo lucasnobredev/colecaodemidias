@@ -1,0 +1,13 @@
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=ColecaoDeMidias
+--content-root=C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias
+--file=C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias\Views\Home\About.cshtml
+--file=C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias\Views\Home\Contact.cshtml
+--file=C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias\Views\Home\Index.cshtml
+--file=C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias\Views\Livro\Cadastrar.cshtml
+--file=C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias\Views\Shared\Error.cshtml
+--file=C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias\Views\Shared\_Layout.cshtml
+--file=C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias\Views\_ViewImports.cshtml
+--file=C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias\Views\_ViewStart.cshtml

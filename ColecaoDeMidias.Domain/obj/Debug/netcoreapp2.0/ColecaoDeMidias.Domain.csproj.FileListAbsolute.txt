@@ -1,0 +1,9 @@
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Domain\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.deps.json
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Domain\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.dll
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Domain\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.pdb
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Domain\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Domain\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.AssemblyInfoInputs.cache
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Domain\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.AssemblyInfo.cs
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Domain\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.dll
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Domain\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.pdb
+C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Domain\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.csprojResolveAssemblyReference.cache

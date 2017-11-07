@@ -1,0 +1,143 @@
+﻿
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+<style>
+    .informacoesDaMidia {
+        display: none;
+    }
+</style>
+<div class="row">
+<h2>Cadastrar mídia</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Cadastrar
+        </div>
+        <div class="panel-body">
+            <div class="col-md-6">
+                <form method="post" onsubmit="return false;">
+                    <div class="row">
+                        <div class="form-group">
+                            <label>Selecione o tipo de midia:</label>
+                            <select class="form-control" onchange="MostrarInformacoesDaMidia(this)" required>
+                                <option value="">...</option>
+                                <option value="1">Livro</option>
+                                <option value="2">Cd</option>
+                                <option value="3">Dvd</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label>Título</label>
+                            <input type="text" class="form-control" name="Titulo" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label>Descrição</label>
+                            <input type="text" class="form-control" name="Descricao" required />
+                        </div>
+                    </div>
+                    <hr />
+                    <section id="Livro" class="informacoesDaMidia">
+                        
+                        <div class="row">
+                            <div class="form-group">
+                                <label>Nome do autor</label>
+                                <input type="text" class="form-control" name="NomeDoAutor" />
+                            </div>
+                            <div class="form-group">
+                                <label>Quantidade de páginas</label>
+                                <input type="text" class="form-control" name="QuantidadeDePaginas" />
+                            </div>
+                        </div>
+                    </section>
+                    <section id="Cd" class="informacoesDaMidia">
+                        <div class="row">
+                            <div class="form-group">
+                                <label>Nome do intérprete</label>
+                                <input type="text" class="form-control" name="NomeDoInterprete" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label>Quantidade de músicas</label>
+                                <input type="text" class="form-control" name="QuantidadeDeMusicas" />
+                            </div>
+                        </div>
+                    </section>
+                    <section id="Dvd" class="informacoesDaMidia">
+                        <div class="row">
+                            <div class="form-group">
+                                <label>Idioma</label>
+                                <input type="text" class="form-control" name="Idioma" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label>Nome da gravadora</label>
+                                <input type="text" class="form-control" name="NomeDaGravadora" />
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+
+    <script>
+
+        $('form').submit(function () {
+            $.post('/api/' + controller, $('form').serialize())
+                .done(function (data) {
+                    if (data.erros == null) {
+                        alert("Mídia cadastrada!");
+                        window.location.href = '/';
+                    }
+                    else
+                        alert(data.erros);
+                })
+                .fail(function (data) {
+                    console.log(data);
+                });
+        });
+
+        var controller = "";
+
+        function MostrarInformacoesDaMidia(obj) {
+            $('.informacoesDaMidia').hide();
+            $('.informacoesDaMidia input').val("");
+            $('.informacoesDaMidia input').prop('required', false);
+
+
+            switch (obj.value) {
+                case "1":
+                    $('#Livro').show();
+                    $('#Livro input').prop('required', true);
+                    controller = "livro";
+                    break;
+                case "2":
+                    $('#Cd').show();
+                    $('#Cd input').prop('required', true);
+                    controller = "cd";
+                    break;
+                case "3":
+                    $('#Dvd').show();
+                    $('#Dvd input').prop('required', true);
+                    controller = "dvd";
+                    break;
+            }
+        }
+    </script>
+}
