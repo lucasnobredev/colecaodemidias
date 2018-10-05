@@ -13,6 +13,7 @@
 
 **Closed issues:**
 
+- testando changelog [\#12](https://github.com/lucasnobredev/colecaodemidias/issues/12)
 - Testando esta issue para ChangeLog [\#5](https://github.com/lucasnobredev/colecaodemidias/issues/5)
 - Cadastro de CD com número de paginas diferente de número retorna cadastro com sucesso, mas não cadastra [\#1](https://github.com/lucasnobredev/colecaodemidias/issues/1)
 
