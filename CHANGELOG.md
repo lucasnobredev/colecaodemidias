@@ -18,6 +18,9 @@
 
 **Merged pull requests:**
 
+- Incluindo melhor updatedData [\#11](https://github.com/lucasnobredev/colecaodemidias/pull/11) ([lucasnobredev](https://github.com/lucasnobredev))
+- Revert "Revert "Incluindo UpdatedData"" [\#10](https://github.com/lucasnobredev/colecaodemidias/pull/10) ([lucasnobredev](https://github.com/lucasnobredev))
+- Revert "Incluindo UpdatedData" [\#9](https://github.com/lucasnobredev/colecaodemidias/pull/9) ([lucasnobredev](https://github.com/lucasnobredev))
 - Revert "Retirando comentários para testar ChangeLog" [\#6](https://github.com/lucasnobredev/colecaodemidias/pull/6) ([lucasnobredev](https://github.com/lucasnobredev))
 - Revert "Retirando comentários para testar ChangeLog" [\#3](https://github.com/lucasnobredev/colecaodemidias/pull/3) ([lucasnobredev](https://github.com/lucasnobredev))
 
