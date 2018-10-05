@@ -1,8 +1,7 @@
 # Change Log
 
-## [Unreleased](https://github.com/lucasnobredev/colecaodemidias/tree/HEAD)
-
-[Full Changelog](https://github.com/lucasnobredev/colecaodemidias/compare/v1.0.0...HEAD)
+## [v1.1.0](https://github.com/lucasnobredev/colecaodemidias/tree/v1.1.0) (2018-10-05)
+[Full Changelog](https://github.com/lucasnobredev/colecaodemidias/compare/v1.0.0...v1.1.0)
 
 **Implemented enhancements:**
 
