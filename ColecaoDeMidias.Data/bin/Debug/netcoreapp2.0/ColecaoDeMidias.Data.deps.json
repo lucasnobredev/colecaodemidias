@@ -26,10 +26,7 @@
           "System.Runtime.Serialization.Primitives": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.3/Elasticsearch.Net.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.5.0.0"
-          }
+          "lib/netstandard1.3/Elasticsearch.Net.dll": {}
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -62,10 +59,7 @@
           "System.Reflection.TypeExtensions": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.3/Nest.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.5.0.0"
-          }
+          "lib/netstandard1.3/Nest.dll": {}
         }
       },
       "Newtonsoft.Json/10.0.3": {
@@ -77,10 +71,7 @@
           "System.Xml.XmlDocument": "4.3.0"
         },
         "runtime": {
-          "lib/netstandard1.3/Newtonsoft.Json.dll": {
-            "assemblyVersion": "10.0.0.0",
-            "fileVersion": "10.0.3.21018"
-          }
+          "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
       "System.Collections/4.3.0": {

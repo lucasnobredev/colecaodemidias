@@ -24,7 +24,7 @@ namespace ColecaoDeMidias.Services
             if (string.IsNullOrEmpty(descricao) || string.IsNullOrEmpty(nomeDoAutor) || string.IsNullOrEmpty(titulo) || quantidadeDePaginas == 0)
                 return ServiceResult.CriarFormularioInvalido(new List<string>() { "Preencha todos os campos" });
 
-            Livro livro = new Livro(titulo, nomeDoAutor) { Descricao = descricao, QuantidadeDePaginas = quantidadeDePaginas };
+            var livro = new Livro(titulo, nomeDoAutor) { Descricao = descricao, QuantidadeDePaginas = quantidadeDePaginas };
                        
             ObterNovoMidiaId();
 
@@ -96,13 +96,16 @@ namespace ColecaoDeMidias.Services
             switch (tipoMidia)
             {
                 case TipoMidia.Livro:
-                    esClientProvider.Client.Update<Livro, object>(midiaId, u => u.Doc(new { emprestimo = emprestimo }).RetryOnConflict(1));
+                    var updateResponseLivro= esClientProvider.Client.Update<Livro, object>(midiaId, u => u.Doc(new { emprestimo = emprestimo }).RetryOnConflict(1));
+                    //return updateResponseLivro;//.IsValid;
                     break;
                 case TipoMidia.Cd:
-                    esClientProvider.Client.Update<Cd, object>(midiaId, u => u.Doc(new { emprestimo = emprestimo }).RetryOnConflict(1));
+                    var updateResponseCd = esClientProvider.Client.Update<Cd, object>(midiaId, u => u.Doc(new { emprestimo = emprestimo }).RetryOnConflict(1));
+                    //return updateResponseCd;//.IsValid;
                     break;
                 case TipoMidia.Dvd:
-                    esClientProvider.Client.Update<Dvd, object>(midiaId, u => u.Doc(new { emprestimo = emprestimo }).RetryOnConflict(1));
+                    var updateResponseDvd = esClientProvider.Client.Update<Dvd, object>(midiaId, u => u.Doc(new { emprestimo = emprestimo }).RetryOnConflict(1));
+                    //return updateResponseDvd;//.IsValid;
                     break;
                 default: return ServiceResult.CriarFormularioInvalido(new List<string> { "Midia não informada" });
             }
@@ -144,6 +147,7 @@ namespace ColecaoDeMidias.Services
 
                     (statusMidia != 0 ?
                         statusMidia == StatusMidia.Disponivel ?
+                          //q.Match(e => e.Field(f => f.Emprestimo.EstaEmprestado).Query("false")) :
                           q.Term(t => t.Field(f => f.Emprestimo.EstaEmprestado)
                           .Value(false)) :
                         q.Term(t => t.Field(f => f.Emprestimo.EstaEmprestado)
