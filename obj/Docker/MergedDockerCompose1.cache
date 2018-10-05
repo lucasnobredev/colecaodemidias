@@ -1,21 +1,11 @@
 services:
   colecaodemidias:
     build:
-      args:
-        source: obj/Docker/publish/
-      context: C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias
+      context: C:\Projetos\colecaodemidias\ColecaoDeMidias
       dockerfile: Dockerfile
-    entrypoint: tail -f /dev/null
     environment:
       ASPNETCORE_ENVIRONMENT: Development
     image: colecaodemidias
-    labels:
-      com.microsoft.visualstudio.debuggee.killprogram: /bin/bash -c "if PID=$$(pidof
-        -x dotnet); then kill $$PID; fi"
-      com.microsoft.visualstudio.debuggee.program: dotnet
-      com.microsoft.visualstudio.debuggee.workingdirectory: /app
     ports:
-    - 80/tcp
-    volumes:
-    - C:\Users\Lucas\vsdbg:/remote_debugger:ro
-version: '3.0'
+    - target: 80
+version: '3.4'
