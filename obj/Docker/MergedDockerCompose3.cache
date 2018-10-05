@@ -1,0 +1,11 @@
+services:
+  colecaodemidias:
+    build:
+      context: C:\Projetos\colecaodemidias\ColecaoDeMidias
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: colecaodemidias
+    ports:
+    - 80/tcp
+version: '3.0'

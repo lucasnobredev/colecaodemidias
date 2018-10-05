@@ -11,3 +11,17 @@ C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Services\bin\Debug\
 C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Services\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.dll
 C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Services\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Data.pdb
 C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Services\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.pdb
+C:\Projetos\colecaodemidias\ColecaoDeMidias.Services\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Services.deps.json
+C:\Projetos\colecaodemidias\ColecaoDeMidias.Services\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Services.dll
+C:\Projetos\colecaodemidias\ColecaoDeMidias.Services\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Services.pdb
+C:\Projetos\colecaodemidias\ColecaoDeMidias.Services\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Data.dll
+C:\Projetos\colecaodemidias\ColecaoDeMidias.Services\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.dll
+C:\Projetos\colecaodemidias\ColecaoDeMidias.Services\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Data.pdb
+C:\Projetos\colecaodemidias\ColecaoDeMidias.Services\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.pdb
+C:\Projetos\colecaodemidias\ColecaoDeMidias.Services\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Services.csprojAssemblyReference.cache
+C:\Projetos\colecaodemidias\ColecaoDeMidias.Services\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Services.csproj.CoreCompileInputs.cache
+C:\Projetos\colecaodemidias\ColecaoDeMidias.Services\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Services.AssemblyInfoInputs.cache
+C:\Projetos\colecaodemidias\ColecaoDeMidias.Services\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Services.AssemblyInfo.cs
+C:\Projetos\colecaodemidias\ColecaoDeMidias.Services\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Services.csproj.CopyComplete
+C:\Projetos\colecaodemidias\ColecaoDeMidias.Services\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Services.dll
+C:\Projetos\colecaodemidias\ColecaoDeMidias.Services\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Services.pdb
