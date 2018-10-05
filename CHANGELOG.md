@@ -6,6 +6,7 @@
 
 **Implemented enhancements:**
 
+- Incluindo UpdatedData [\#8](https://github.com/lucasnobredev/colecaodemidias/pull/8) ([lucasnobredev](https://github.com/lucasnobredev))
 - Removendo comentários para testar ChangeLog [\#7](https://github.com/lucasnobredev/colecaodemidias/pull/7) ([lucasnobredev](https://github.com/lucasnobredev))
 - Retirando comentários para testar ChangeLog [\#4](https://github.com/lucasnobredev/colecaodemidias/pull/4) ([lucasnobredev](https://github.com/lucasnobredev))
 - Retirando comentários para testar ChangeLog [\#2](https://github.com/lucasnobredev/colecaodemidias/pull/2) ([lucasnobredev](https://github.com/lucasnobredev))
