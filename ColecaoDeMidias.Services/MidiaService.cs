@@ -97,15 +97,12 @@ namespace ColecaoDeMidias.Services
             {
                 case TipoMidia.Livro:
                     var updateResponseLivro= esClientProvider.Client.Update<Livro, object>(midiaId, u => u.Doc(new { emprestimo = emprestimo }).RetryOnConflict(1));
-                    //return updateResponseLivro;//.IsValid;
                     break;
                 case TipoMidia.Cd:
                     var updateResponseCd = esClientProvider.Client.Update<Cd, object>(midiaId, u => u.Doc(new { emprestimo = emprestimo }).RetryOnConflict(1));
-                    //return updateResponseCd;//.IsValid;
                     break;
                 case TipoMidia.Dvd:
                     var updateResponseDvd = esClientProvider.Client.Update<Dvd, object>(midiaId, u => u.Doc(new { emprestimo = emprestimo }).RetryOnConflict(1));
-                    //return updateResponseDvd;//.IsValid;
                     break;
                 default: return ServiceResult.CriarFormularioInvalido(new List<string> { "Midia não informada" });
             }
@@ -147,7 +144,6 @@ namespace ColecaoDeMidias.Services
 
                     (statusMidia != 0 ?
                         statusMidia == StatusMidia.Disponivel ?
-                          //q.Match(e => e.Field(f => f.Emprestimo.EstaEmprestado).Query("false")) :
                           q.Term(t => t.Field(f => f.Emprestimo.EstaEmprestado)
                           .Value(false)) :
                         q.Term(t => t.Field(f => f.Emprestimo.EstaEmprestado)
