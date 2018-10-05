@@ -1,4 +1,4 @@
-version: '3.4'
+version: '3'
 
 services:
   colecaodemidias:
@@ -6,10 +6,10 @@ services:
       args:
         source: obj/Docker/publish/
     volumes:
-      - C:\Users\lucas\vsdbg\vs2017u5:/remote_debugger:ro
+      - C:\Users\Lucas\vsdbg:/remote_debugger:ro
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_colecaodemidias$ ColecaoDeMidias.dll"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  ColecaoDeMidias.dll"
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/bash -c \"if PID=$$(pidof -x dotnet); then kill $$PID; fi\""
