@@ -3707,26 +3707,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lucas\\.nuget\\packages\\": {},
+    "C:\\Users\\lucas\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\ProjetoMundipagg\\ColecaoDeMidias\\ColecaoDeMidias.Domain\\ColecaoDeMidias.Domain.csproj",
+      "projectUniqueName": "C:\\Projetos\\colecaodemidias\\ColecaoDeMidias.Domain\\ColecaoDeMidias.Domain.csproj",
       "projectName": "ColecaoDeMidias.Domain",
-      "projectPath": "C:\\Projetos\\ProjetoMundipagg\\ColecaoDeMidias\\ColecaoDeMidias.Domain\\ColecaoDeMidias.Domain.csproj",
-      "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\ProjetoMundipagg\\ColecaoDeMidias\\ColecaoDeMidias.Domain\\obj\\",
+      "projectPath": "C:\\Projetos\\colecaodemidias\\ColecaoDeMidias.Domain\\ColecaoDeMidias.Domain.csproj",
+      "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+      "outputPath": "C:\\Projetos\\colecaodemidias\\ColecaoDeMidias.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3753,16 +3750,16 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
-          },
-          "Newtonsoft.Json": {
-            "target": "Package",
-            "version": "10.0.3"
           },
           "NEST": {
             "target": "Package",
-            "version": "5.5.0"
+            "version": "[5.5.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[10.0.3, )"
           }
         },
         "imports": [
