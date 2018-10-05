@@ -9,15 +9,3 @@ C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Data\bin\Debug\netc
 C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Data\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.pdb
 C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Data\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Data.dll
 C:\Projetos\ProjetoMundipagg\ColecaoDeMidias\ColecaoDeMidias.Data\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Data.pdb
-C:\Projetos\colecaodemidias\ColecaoDeMidias.Data\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Data.deps.json
-C:\Projetos\colecaodemidias\ColecaoDeMidias.Data\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Data.dll
-C:\Projetos\colecaodemidias\ColecaoDeMidias.Data\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Data.pdb
-C:\Projetos\colecaodemidias\ColecaoDeMidias.Data\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.dll
-C:\Projetos\colecaodemidias\ColecaoDeMidias.Data\bin\Debug\netcoreapp2.0\ColecaoDeMidias.Domain.pdb
-C:\Projetos\colecaodemidias\ColecaoDeMidias.Data\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Data.csprojAssemblyReference.cache
-C:\Projetos\colecaodemidias\ColecaoDeMidias.Data\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Data.csproj.CoreCompileInputs.cache
-C:\Projetos\colecaodemidias\ColecaoDeMidias.Data\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Data.AssemblyInfoInputs.cache
-C:\Projetos\colecaodemidias\ColecaoDeMidias.Data\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Data.AssemblyInfo.cs
-C:\Projetos\colecaodemidias\ColecaoDeMidias.Data\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Data.csproj.CopyComplete
-C:\Projetos\colecaodemidias\ColecaoDeMidias.Data\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Data.dll
-C:\Projetos\colecaodemidias\ColecaoDeMidias.Data\obj\Debug\netcoreapp2.0\ColecaoDeMidias.Data.pdb
