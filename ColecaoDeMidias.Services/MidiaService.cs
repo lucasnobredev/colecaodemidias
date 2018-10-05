@@ -24,7 +24,7 @@ namespace ColecaoDeMidias.Services
             if (string.IsNullOrEmpty(descricao) || string.IsNullOrEmpty(nomeDoAutor) || string.IsNullOrEmpty(titulo) || quantidadeDePaginas == 0)
                 return ServiceResult.CriarFormularioInvalido(new List<string>() { "Preencha todos os campos" });
 
-            var livro = new Livro(titulo, nomeDoAutor) { Descricao = descricao, QuantidadeDePaginas = quantidadeDePaginas };
+            Livro livro = new Livro(titulo, nomeDoAutor) { Descricao = descricao, QuantidadeDePaginas = quantidadeDePaginas };
                        
             ObterNovoMidiaId();
 
